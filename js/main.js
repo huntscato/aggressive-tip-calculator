@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         display.textContent = message; 
     }; 
 
-    updateDisplay("Enter the meal cost using the buttons below (ie. 7.99 for $7.99, obviously). ");
+    updateDisplay("Enter the total cost, fatty (ie. 7.99 for $7.99, obviously). ");
 
     // Button Clicks ~ 
 

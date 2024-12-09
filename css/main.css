@@ -91,10 +91,25 @@ textarea {
 
 
 .aggressive {
+  animation: fadeFall 0.7s ease-out forwards;
+  display: inline-block;
   font-family: 'MonteCarlo';
   font-style: italic;
   font-weight: bold;
+  position: relative;
+  opacity: 0;
   text-decoration: underline;
+}
+
+@keyframes fadeFall {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .brand {
@@ -116,6 +131,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   padding: 20px;
+  position: fixed;
   text-align: center;
   width: 55%;
 }
@@ -132,6 +148,8 @@ textarea {
   color: rgb(200, 197, 197);
   height: 100px;
   margin-bottom: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
   text-align: center;
   text-shadow: 1px 1px 20px white;
   width: 100%;
@@ -141,6 +159,7 @@ textarea {
   background:rgb(232, 16, 16);
   border: 2px solid rgb(67, 3, 3);
   border-radius: 5px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -178,6 +197,7 @@ h2 {
   background-color: rgb(232, 16, 16);
   border: 2px solid rgb(67, 3, 3);
   border-radius: 5px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
   cursor: pointer;
   display: flex;
   justify-content: center;
