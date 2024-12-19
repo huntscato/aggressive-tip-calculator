@@ -222,6 +222,27 @@ p {
 }
 
 
+/**** TABLET STYLING ****/
+
+@media (min-width: 768px) {
+
+.calculator{
+  width: 40%;
+}
+
+}
+
+/**** DESKTOP STYLING ****/
+
+@media (min-width: 1200px) {
+
+.calculator {
+  width: 20%;
+}
+
+}
+
+
 
 /* ==========================================================================
    Helper classes
